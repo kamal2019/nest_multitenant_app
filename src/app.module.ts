@@ -9,7 +9,7 @@ import { TenantModule } from './tenant/tenant.module';
   imports: [
     ConfigModule.forRoot({
       isGlobal:true,
-      load:[configuration]
+      // load:[configuration]
     }),
     MongooseModule.forRootAsync({
       imports:[ConfigModule],
